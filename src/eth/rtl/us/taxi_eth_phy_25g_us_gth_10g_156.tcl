@@ -52,6 +52,8 @@ lappend extra_ports txelecidle_in txinhibit_in txdiffctrl_in txmaincursor_in txp
 lappend extra_ports rxcdrlock_out rxcdrhold_in rxcdrovrden_in
 # channel EQ
 lappend extra_ports rxlpmen_in
+# near-end/far-end loopback (gt_loopback control register)
+lappend extra_ports loopback_in
 
 set config [dict create]
 

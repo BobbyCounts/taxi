@@ -685,6 +685,7 @@ end else if (HAS_COMMON && GT_TYPE == "GTY" && GT_USP) begin : xcvr
         .rxcdrovrden_in(1'b0),
 
         .rxlpmen_in(gt_rx_lpm_en),
+        .loopback_in(ctrl_loopback),
 
         .rxpolarity_in(ctrl_rxpolarity),
 
@@ -803,6 +804,7 @@ end else if (HAS_COMMON && GT_TYPE == "GTH" && GT_USP) begin : xcvr
         .rxcdrovrden_in(1'b0),
 
         .rxlpmen_in(gt_rx_lpm_en),
+        .loopback_in(ctrl_loopback),
 
         .rxpolarity_in(ctrl_rxpolarity),
 
@@ -921,6 +923,7 @@ end else if (HAS_COMMON && GT_TYPE == "GTY" && !GT_USP) begin : xcvr
         .rxcdrovrden_in(1'b0),
 
         .rxlpmen_in(gt_rx_lpm_en),
+        .loopback_in(ctrl_loopback),
 
         .rxpolarity_in(ctrl_rxpolarity),
 
@@ -1039,6 +1042,7 @@ end else if (HAS_COMMON && GT_TYPE == "GTH" && !GT_USP) begin : xcvr
         .rxcdrovrden_in(1'b0),
 
         .rxlpmen_in(gt_rx_lpm_en),
+        .loopback_in(ctrl_loopback),
 
         .rxpolarity_in(ctrl_rxpolarity),
 
@@ -1137,6 +1141,7 @@ end else if (!HAS_COMMON && GT_TYPE == "GTY") begin : xcvr
         .rxcdrovrden_in(1'b0),
 
         .rxlpmen_in(gt_rx_lpm_en),
+        .loopback_in(ctrl_loopback),
 
         .rxpolarity_in(ctrl_rxpolarity),
 
@@ -1246,6 +1251,7 @@ end else if (!HAS_COMMON && GT_TYPE == "GTH") begin : xcvr
         .rxcdrovrden_in(1'b0),
 
         .rxlpmen_in(gt_rx_lpm_en),
+        .loopback_in(ctrl_loopback),
 
         .rxpolarity_in(ctrl_rxpolarity),
 
